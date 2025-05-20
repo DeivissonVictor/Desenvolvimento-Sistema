@@ -1,0 +1,5 @@
+O programa simula uma fila de atendimento com prioridade, onde cada chamado possui um nome e um nível de prioridade de 1 a 5. Ele utiliza dois vetores paralelos para armazenar os nomes dos chamados e suas respectivas prioridades. A fila é controlada por dois índices: um que marca o início e outro que marca o final da fila.
+
+As principais funcionalidades do sistema são: adicionar chamados à fila (enfileirar), remover o chamado mais antigo (desinfileirar), exibir todos os chamados na fila e contar quantos deles têm prioridade alta (nível 4 ou 5).
+
+Na função principal, o programa enfileira cinco chamados, mostra a fila e a quantidade de chamados com prioridade alta, remove dois chamados e exibe novamente a fila atualizada. O código é útil para demonstrar o funcionamento básico de uma estrutura de dados do tipo fila com prioridade.
