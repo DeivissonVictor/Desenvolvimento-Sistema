@@ -1,0 +1,1 @@
+Este programa em Portugol lê 5 números digitados pelo usuário, armazena-os em um vetor e, ao final, exibe o maior número entre eles. Ele faz isso utilizando dois laços: o primeiro para ler os números e o segundo para compará-los, atualizando uma variável chamada maior sempre que encontra um número maior que o anterior. 
