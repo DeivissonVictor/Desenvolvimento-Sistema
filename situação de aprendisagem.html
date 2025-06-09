@@ -1,0 +1,104 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+        body { font-family: Arial; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+    .section { margin-bottom: 30px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    .section h2 { margin-top: 0; }
+    .checkbox { width: auto; }
+    button { padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Formulário de Inscrição – Peneira de Futebol do Clube Atleticom Mineiro(base)</h1>
+ <h2>Dados do Atleta</h2>
+    <div class="section">
+  <form id="formPeneira">
+    <!-- DADOS DO ATLETA-->
+     <label> Nome: <input type="text" id="nome" required></label><br><br>
+      <label>Data de nascimento <input type="date" name="responsavel_nascimento"></label>
+     <label>CPF: <input type="email" id="email" required></label><br><br>
+      <label> Telefone: <input type="number" id="telefone" required></label><br><br>
+       <label> Cidade/Estadado: <input type="text" id="cidade/estado" required></label><br><br>
+         <label> RG(opcional): <input type="text" id="formação academica" required></label><br><br>
+         <label> Endereço completo (bairro, cidade, estado): <input type="text" id="Experiência profissional" required></label><br><br>
+        <label>Foto 3x4 <input type="file" name="responsavel_foto" accept="image/*"></label>
+         </div>
+         <button type="button" onclick="gerarCurriculo()">Gerar Currículo</button>
+      <button type="button" onclick="baixarPDF()">Baixar em PDF</button>
+    <!-- DADOS DO RESPONSÁVEL -->
+<div class="section">
+      <h2>Dados do Responsável </h2>
+      <label>Nome completo <input type="text" name="responsavel_nome" required></label>
+      <label>Data de nascimento <input type="date" name="responsavel_nascimento"></label>
+      <label>CPF <input type="text" name="responsavel_cpf"></label>
+      <label>E-mail <input type="email" name="responsavel_email"></label>
+      <label>Telefone (com DDD) <input type="tel" name="responsavel_telefone"></label>
+      <label>Parentesco com o atleta <input type="text" name="responsavel_parentesco"></label>
+      <label>Foto 3x4 <input type="file" name="responsavel_foto" accept="image/*"></label>
+       
+       <!-- INFORMAÇÕES TÉCNICAS -->
+    <div class="section">
+      <h2>Informações Técnicas</h2>
+      <label>Modalidade <input type="text" name="modalidade" required></label>
+      <label>Participa de escolinha ou academia de futebol? Qual? <input type="text" name="escolinha" required></label>
+      <label>Posição principal <input type="text" name="posicao_principal" required></label>
+      <label>Joga em mais de uma posição? Se sim quais? <input type="text" name="posicoes_extra"></label>
+      <label>Pé dominante 
+        <select name="pe_dominante" required>
+          <option value="">Selecione</option>
+          <option value="direito">Direito</option>
+          <option value="esquerdo">Esquerdo</option>
+          <option value="ambos">Ambos</option>
+        </select>
+      </label>
+      <label>Experiência (anos jogando) <input type="number" name="experiencia" min="0"></label>
+      <label>Tem vídeos jogando? (link) <input type="url" name="video"></label>
+    </div>
+
+    <!-- SAÚDE E APTIDÃO -->
+    <div class="section">
+      <h2>Saúde e Aptidão Física</h2>
+      <label>Possui laudo médico para atividades físicas?
+        <select name="laudo_medico" required>
+          <option value="">Selecione</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+         <label>Já teve alguma lesão grave? Se sim qual?<textarea name="saúde"></textarea></label>
+         <label>Tipo sanguíneo<textarea name="saúde"></textarea></label>
+          <label>Possui alergia ou restrições alimentares? Se Sim qual?<textarea name="saúde"></textarea></label>
+         <label>Contato de emergência<textarea name="saúde"></textarea></label>
+          <label>Altura e Kilo<textarea name="saúde"></textarea></label>
+        
+      </label>
+      <label>Já teve alguma lesão grave? Qual? <textarea name="lesao"></textarea></label>
+    </div>
+
+  <!-- AVISO -->
+    <div class="section">
+      <h2>*****************************Aviso*****************************</h2>
+      <h2>Documentos obrigatórios</h2>
+     <label> Cópia do RG ou Certidão de Nascimento <input type="date" text="documentos"></label>
+      <label> Cópia do CPF (opcional para menores de idade)<input type="date" text="documentos"></label>
+      <label> Atestado médico de aptidão física (emitido nos últimos 90 dias) <input type="date" text="documentos"></label>
+       <label>  Autorização assinada pelos pais ou responsável legal (se menor de 18 anos) <input type="date" text="documentos"></label>
+         <label>   1 foto 3x4 recente <input type="date" text="documentos"></label>
+           <label>   Comprovante de residência atualizado <input type="date" text="documentos"></label>
+    <!-- AUTORIZAÇÃO -->
+    <div class="section">
+      <h2>Autorização</h2>
+      <label><input type="checkbox" class="checkbox" name="termo_responsabilidade" required> Termo de responsabilidade e autorização para menores</label>
+      <label><input type="checkbox" class="checkbox" name="uso_imagem"> Autorizo o uso de imagem para fins de divulgação</label>
+    </div>
+
+    <button type="submit">ENVIAR CADASTRO</button>
+
+  </form>
+      </script>
+</body>
+</html>
+    
+    
